@@ -9,7 +9,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export const executeCode = async (language, userCode, testCases) => {
   // --- PRODUCTION MODE: Real Judge0 API Call ---
-  if (process.env.NODE_ENV === "production") {
+  if (process.env.NODE_ENV === "production node server.js") {
     const LANGUAGE_MAPPING = {
       javascript: 93,
       python: 71,
